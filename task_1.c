@@ -32,7 +32,8 @@ int main () {
 
     for (int i = 0; i<N; i++) {
         for (int j = 0; j<N; j++) {
-            printf ("%d ", C[i][j]);
+            if (j == N-1) printf ("%d", C[i][j]);
+            else printf ("%d ", C[i][j]);
         }
         if (i!=N-1) printf ("\n");
     }
